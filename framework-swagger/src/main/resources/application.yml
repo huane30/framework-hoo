@@ -1,0 +1,3 @@
+#tomcat\u7AEF\u53E3\u4FEE\u6539
+server:
+  port: 8080

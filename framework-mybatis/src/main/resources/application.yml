@@ -1,0 +1,17 @@
+---
+server:
+  port: 8081
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/user_info?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root  
+    password: 123456  
+    driver-class-name: com.mysql.jdbc.Driver
+      
+      
+mybatis:   
+  typeAliasesPackage: com.hoo.framework.mybatis.entity
+  mapperLocations: classpath:mapper/*.xml
+

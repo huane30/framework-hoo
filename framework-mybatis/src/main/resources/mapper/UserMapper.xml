@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+    <mapper namespace="com.hoo.framework.mybatis.mapper.UserMapper" >
+
+    <select id="getUserById" resultType="com.hoo.framework.mybatis.entity.User"
+            parameterType="java.lang.String" >
+        select
+          id, username as userName, age, ctm
+        from
+          user_info.tb_user
+        where
+          id = 1
+    </select>
+
+</mapper>
